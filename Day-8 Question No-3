@@ -1,0 +1,30 @@
+3. Write a “person” class to hold all the details.
+
+Ans....
+
+
+class Person{
+    constructor(name,heigth,weigth,age,degree,branch,city, state){
+        this.name=name;
+        this.heigth=heigth;
+        this.weigth=weigth;
+        this.age=age;
+        this.degree=degree;
+        this.branch=branch;
+        this.city=city;
+        this.state=state;
+    }
+    details(){
+        console.log(`
+        name:${this.name}
+        height:${this.heigth}
+        weight:${this.weigth}
+        age:${this.age}
+        degree:${this.degree}
+        branch:${this.branch}
+        city:${this.city}
+        state:${this.state}`)
+    }
+}
+let Person1=new Person("Krushna Biradar","5.7","70","24","Bachelor of Engineering","Electrical","Latur","Maharastra")
+Person1.details()
