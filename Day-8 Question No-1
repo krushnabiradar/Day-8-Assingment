@@ -1,1 +1,36 @@
+1. https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md?
 
+
+Ans...
+
+
+class Movie {
+
+    constructor(title,studio,rating='PG') {
+    this.title = title
+    this.studio = studio
+    this.rating= rating
+    
+    }
+    getPG(arr) {
+        let result = []
+        arr.filter(movie => {
+        if(movie.rating==='PG'){
+           result.push(movie)
+           }
+           })
+           
+           return result
+         }
+       }  
+     const movie = new Movie('Iron Man-1','Marvel','PG') 
+     const movie2 = new Movie('Inception (2010) ','Warner Bros','PG')
+     const movie3 = new Movie('Joker (2019)','DC','R')
+     const movie4 = new Movie('The Dark Knight (2008)','DC','PG')
+     const movie5 = new Movie('Deadpool 2 (2018)','Marvel','R')
+     const movie6 = new Movie('The Matrix Reloaded','Village Roadshow Pictures','R')
+
+
+    let moviesArr= [movie,movie2,movie3,movie4,movie5,movie6]
+    console.log(movie.getPG(moviesArr))
+ 
